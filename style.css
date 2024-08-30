@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gilroy';
+    color: white;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+}
+#main{
+    background-color: black;
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+.elem{
+    border-bottom: 0.5px solid rgb(23, 23, 23);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* position: relative; */
+}
+.elem h1{
+    font-size: 6vw;
+    z-index: 9;
+    position: relative;
+    mix-blend-mode: difference;
+}
+#main img{
+    object-fit: cover;
+    object-position: center;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    opacity: 0;
+    transition: all linear 0.3s;
+}
